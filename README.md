@@ -6,3 +6,4 @@ query = input("pergunte qualquer coisa:  ")
 
 for url in search(query):
     print(url)
+    
