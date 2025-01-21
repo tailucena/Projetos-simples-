@@ -1,5 +1,5 @@
 # Projetos-simples-
-#data de criação: 19/11/2024
+#data de criação: 20/01/2025
 from googlesearch import search
 
 query = input("pergunte qualquer coisa:  ")
