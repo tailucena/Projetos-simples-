@@ -1,0 +1,33 @@
+#Projeto simples de analises de dados com gráfico 
+#Autora: Tainara M.da Rosa
+#Data de criação:01/01/2025
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#Dados de vendas
+dados = {
+ 'Mês': ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+ 'Vendas': [1000, 1200, 1500, 1800, 2000, 2200]
+}
+#Criar DataFrame
+df = pd.DataFrame(dados)
+
+#Exibir DataFrame
+print(df)
+
+#Análise de dados
+media_vendas = df['Vendas'].mean()
+max_vendas = df['Vendas'].max()
+min_vendas = df['Vendas'].min()
+
+print(f"Média de vendas: R${media_vendas:.2f}")
+print(f"Máximo de vendas: R${max_vendas:.2f}")
+print(f"Mínimo de vendas: R${min_vendas:.2f}")
+
+#Gráfico de barras
+plt.bar(df['Mês'], df['Vendas'])
+plt.title('Vendas por Mês')
+plt.xlabel('Mês')
+plt.ylabel('Vendas')
+plt.show()
